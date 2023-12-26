@@ -54,6 +54,8 @@ public class OpenStatusGUIProcedure {
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		Entity entity = (Entity) dependencies.get("entity");
+		if (entity instanceof PlayerEntity)
+			((PlayerEntity) entity).closeScreen();
 		{
 			Entity _ent = entity;
 			if (_ent instanceof ServerPlayerEntity) {

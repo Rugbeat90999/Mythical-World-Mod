@@ -717,6 +717,15 @@
         ]
       },
       "path": "~/StatusGUI"
+    },
+    {
+      "name": "OpenStatusKey",
+      "type": "keybind",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_status_key",
+      "path": "~/StatusGUI"
     }
   ],
   "variable_elements": [
@@ -879,7 +888,9 @@
   ],
   "sound_elements": [],
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "key.mythical_world.open_status_key": "Open Status"
+    }
   },
   "foldersRoot": {
     "name": "~",
