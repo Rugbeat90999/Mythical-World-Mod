@@ -1,0 +1,162 @@
+{
+  "_fv": 28,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 111,
+    "height": 190,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": true,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Select a Race",
+          "color": {
+            "value": -13421773,
+            "falpha": 0.0
+          },
+          "name": "Select a Race",
+          "x": 179,
+          "y": 31
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Human",
+          "onClick": {
+            "name": "OpenHumanGUI"
+          },
+          "width": 50,
+          "height": 20,
+          "name": "Human",
+          "x": 187,
+          "y": 43
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Elf",
+          "onClick": {
+            "name": "OpenElfGUI"
+          },
+          "width": 30,
+          "height": 20,
+          "name": "Elf",
+          "x": 197,
+          "y": 68
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Dwarf",
+          "onClick": {
+            "name": "OpenDwarfGUI"
+          },
+          "width": 50,
+          "height": 20,
+          "name": "Dwarf",
+          "x": 187,
+          "y": 92
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Merfolk",
+          "onClick": {
+            "name": "OpenMerfolkGUI"
+          },
+          "width": 70,
+          "height": 20,
+          "name": "Merfolk",
+          "x": 177,
+          "y": 116
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Halfling",
+          "onClick": {
+            "name": "OpenHalflingGUI"
+          },
+          "width": 80,
+          "height": 20,
+          "name": "Halfling",
+          "x": 172,
+          "y": 140
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Dragonoid",
+          "onClick": {
+            "name": "OpenDragonoidGUI"
+          },
+          "width": 90,
+          "height": 20,
+          "name": "Dragonoid",
+          "x": 167,
+          "y": 164
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Demon",
+          "onClick": {
+            "name": "OpenDemonGUI"
+          },
+          "width": 50,
+          "height": 20,
+          "name": "Demon",
+          "x": 188,
+          "y": 188
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "",
+          "color": {
+            "value": -13421773,
+            "falpha": 0.0
+          },
+          "name": "",
+          "x": 276,
+          "y": 39
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "",
+          "color": {
+            "value": -13421773,
+            "falpha": 0.0
+          },
+          "name": "",
+          "x": 195,
+          "y": 102
+        }
+      }
+    ],
+    "onTick": {
+      "name": "SelectingRace"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

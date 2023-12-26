@@ -1,0 +1,259 @@
+{
+  "_fv": 28,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": false,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "2.0.png",
+          "use1Xscale": false,
+          "name": "2.0.png",
+          "x": 125,
+          "y": 38
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:waterAffinity>",
+          "color": {
+            "value": -12895429,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:waterAffinity>",
+          "x": 167,
+          "y": 77
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:earthAffinity>",
+          "color": {
+            "value": -12895429,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:earthAffinity>",
+          "x": 167,
+          "y": 111
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:fireAffinity>",
+          "color": {
+            "value": -12895429,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:fireAffinity>",
+          "x": 167,
+          "y": 146
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:airAffinity>",
+          "color": {
+            "value": -12895429,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:airAffinity>",
+          "x": 250,
+          "y": 77
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:lightAffinity>",
+          "color": {
+            "value": -12895429,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:lightAffinity>",
+          "x": 250,
+          "y": 111
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:darkAffinity>",
+          "color": {
+            "value": -12895429,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:darkAffinity>",
+          "x": 250,
+          "y": 146
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "+",
+          "width": 30,
+          "height": 20,
+          "name": "+",
+          "x": 181,
+          "y": 70
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "+",
+          "width": 30,
+          "height": 20,
+          "name": "+",
+          "x": 181,
+          "y": 104
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "+",
+          "width": 30,
+          "height": 20,
+          "name": "+",
+          "x": 181,
+          "y": 139
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "+",
+          "width": 30,
+          "height": 20,
+          "name": "+",
+          "x": 264,
+          "y": 70
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "+",
+          "width": 30,
+          "height": 20,
+          "name": "+",
+          "x": 264,
+          "y": 104
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "+",
+          "width": 30,
+          "height": 20,
+          "name": "+",
+          "x": 264,
+          "y": 139
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "-",
+          "width": 30,
+          "height": 20,
+          "name": "-",
+          "x": 132,
+          "y": 70
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "-",
+          "width": 30,
+          "height": 20,
+          "name": "-",
+          "x": 132,
+          "y": 104
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "-",
+          "width": 30,
+          "height": 20,
+          "name": "-",
+          "x": 132,
+          "y": 139
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "-",
+          "width": 30,
+          "height": 20,
+          "name": "-",
+          "x": 215,
+          "y": 70
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "-",
+          "width": 30,
+          "height": 20,
+          "name": "-",
+          "x": 215,
+          "y": 104
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "-",
+          "width": 30,
+          "height": 20,
+          "name": "-",
+          "x": 215,
+          "y": 139
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Next",
+          "onClick": {
+            "name": "OpenAffinityGUI2"
+          },
+          "width": 46,
+          "height": 20,
+          "name": "Next",
+          "x": 190,
+          "y": 177
+        }
+      }
+    ],
+    "onClosed": {
+      "name": "CloseStatusGUI"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

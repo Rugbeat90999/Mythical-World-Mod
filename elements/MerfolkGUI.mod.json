@@ -1,0 +1,207 @@
+{
+  "_fv": 28,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Merfolk",
+          "color": {
+            "value": -13421773,
+            "falpha": 0.0
+          },
+          "name": "Merfolk",
+          "x": 132,
+          "y": 44
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Merfolk can breath underwater,",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Merfolk can breath underwater,",
+          "x": 132,
+          "y": 59
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "but not on land. All their",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "but not on land. All their",
+          "x": 132,
+          "y": 69
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Select",
+          "width": 56,
+          "height": 20,
+          "name": "Select",
+          "x": 238,
+          "y": 176
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "stats are increased while in",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "stats are increased while in",
+          "x": 132,
+          "y": 79
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "water and decreased while",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "water and decreased while",
+          "x": 132,
+          "y": 89
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Siren",
+          "onClick": {
+            "name": "SelectSirenMerfolk"
+          },
+          "width": 66,
+          "height": 20,
+          "name": "Siren",
+          "x": 132,
+          "y": 111
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Land and water benifits and",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Land and water benifits and",
+          "x": 132,
+          "y": 131
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "penaltys are both decreased,",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "penaltys are both decreased,",
+          "x": 132,
+          "y": 141
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "",
+          "x": 132,
+          "y": 150
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "outside of water",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "outside of water",
+          "x": 132,
+          "y": 98
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "breath time is increased and",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "breath time is increased and",
+          "x": 132,
+          "y": 153
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Back",
+          "onClick": {
+            "name": "BackTORaceGUIProcedure"
+          },
+          "width": 46,
+          "height": 20,
+          "name": "Back",
+          "x": 132,
+          "y": 176
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "can stop oponites from moving",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "can stop oponites from moving",
+          "x": 133,
+          "y": 163
+        }
+      }
+    ],
+    "onTick": {
+      "name": "SelectingRace"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

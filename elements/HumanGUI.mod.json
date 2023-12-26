@@ -1,0 +1,89 @@
+{
+  "_fv": 28,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Human",
+          "color": {
+            "value": -13421773,
+            "falpha": 0.0
+          },
+          "name": "Human",
+          "x": 132,
+          "y": 44
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "The basic minecraft play style.",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "The basic minecraft play style.",
+          "x": 132,
+          "y": 59
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Play as a regular human.",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Play as a regular human.",
+          "x": 132,
+          "y": 69
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Select",
+          "width": 56,
+          "height": 20,
+          "name": "Select",
+          "x": 238,
+          "y": 176
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Back",
+          "onClick": {
+            "name": "BackTORaceGUIProcedure"
+          },
+          "width": 46,
+          "height": 20,
+          "name": "Back",
+          "x": 132,
+          "y": 176
+        }
+      }
+    ],
+    "onTick": {
+      "name": "SelectingRace"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

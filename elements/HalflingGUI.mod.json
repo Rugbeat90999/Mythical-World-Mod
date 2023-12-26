@@ -1,0 +1,102 @@
+{
+  "_fv": 28,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Halfling",
+          "color": {
+            "value": -13421773,
+            "falpha": 0.0
+          },
+          "name": "Halfling",
+          "x": 132,
+          "y": 44
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Halflings have great speed and",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Halflings have great speed and",
+          "x": 132,
+          "y": 59
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "and endurance",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "and endurance",
+          "x": 132,
+          "y": 80
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Select",
+          "width": 56,
+          "height": 20,
+          "name": "Select",
+          "x": 238,
+          "y": 176
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "dark magic but low strength",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "dark magic but low strength",
+          "x": 132,
+          "y": 69
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Back",
+          "onClick": {
+            "name": "BackTORaceGUIProcedure"
+          },
+          "width": 46,
+          "height": 20,
+          "name": "Back",
+          "x": 132,
+          "y": 176
+        }
+      }
+    ],
+    "onTick": {
+      "name": "SelectingRace"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

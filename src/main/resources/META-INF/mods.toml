@@ -1,0 +1,25 @@
+modLoader="javafml"
+loaderVersion="[36,)"
+license="Not specified"
+
+[[mods]]
+modId="mythical_world"
+version="1.0.0"
+displayName="Mythical World"
+credits="Created using mod maker MCreator - https://mcreator.net/about"
+displayURL="https://mcreator.net"
+authors="Rugbeat90999, MCreator"
+description='''
+Adds mythical races and creatures and a leveling system.
+'''
+
+[[dependencies.mythical_world]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.5]"
+    ordering="NONE"
+    side="BOTH"
+
+
+
+

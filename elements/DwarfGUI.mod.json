@@ -1,0 +1,141 @@
+{
+  "_fv": 28,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Dwarf",
+          "color": {
+            "value": -13421773,
+            "falpha": 0.0
+          },
+          "name": "Dwarf",
+          "x": 132,
+          "y": 44
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "They have increased strength",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "They have increased strength",
+          "x": 132,
+          "y": 59
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "and dexterity, but lesser speed",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "and dexterity, but lesser speed",
+          "x": 132,
+          "y": 69
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Select",
+          "width": 56,
+          "height": 20,
+          "name": "Select",
+          "x": 238,
+          "y": 176
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Back",
+          "onClick": {
+            "name": "BackTORaceGUIProcedure"
+          },
+          "width": 46,
+          "height": 20,
+          "name": "Back",
+          "x": 132,
+          "y": 176
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "they also need less xp for",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "they also need less xp for",
+          "x": 132,
+          "y": 79
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "enchanting",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "enchanting",
+          "x": 132,
+          "y": 89
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "they also have a slight",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "they also have a slight",
+          "x": 132,
+          "y": 99
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "affinity for metal magic",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "affinity for metal magic",
+          "x": 132,
+          "y": 109
+        }
+      }
+    ],
+    "onTick": {
+      "name": "SelectingRace"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

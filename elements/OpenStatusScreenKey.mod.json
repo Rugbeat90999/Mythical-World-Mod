@@ -1,0 +1,12 @@
+{
+  "_fv": 28,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "V",
+    "keyBindingName": "Open Status Screen",
+    "keyBindingCategoryKey": "mythical",
+    "onKeyPressed": {
+      "name": "OpenStatusScreenProcedure"
+    }
+  }
+}
