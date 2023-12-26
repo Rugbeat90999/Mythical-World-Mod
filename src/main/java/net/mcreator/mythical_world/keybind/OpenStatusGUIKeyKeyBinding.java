@@ -18,7 +18,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.client.settings.KeyBinding;
 import net.minecraft.client.Minecraft;
 
-import net.mcreator.mythical_world.procedures.OpenStatusGUIProcedure;
+import net.mcreator.mythical_world.procedures.OpenStatusGUIProcedureProcedure;
 import net.mcreator.mythical_world.MythicalWorldModElements;
 import net.mcreator.mythical_world.MythicalWorldMod;
 
@@ -29,12 +29,12 @@ import java.util.HashMap;
 import java.util.AbstractMap;
 
 @MythicalWorldModElements.ModElement.Tag
-public class OpenStatusKeyKeyBinding extends MythicalWorldModElements.ModElement {
+public class OpenStatusGUIKeyKeyBinding extends MythicalWorldModElements.ModElement {
 	@OnlyIn(Dist.CLIENT)
 	private KeyBinding keys;
 
-	public OpenStatusKeyKeyBinding(MythicalWorldModElements instance) {
-		super(instance, 41);
+	public OpenStatusGUIKeyKeyBinding(MythicalWorldModElements instance) {
+		super(instance, 37);
 		elements.addNetworkMessage(KeyBindingPressedMessage.class, KeyBindingPressedMessage::buffer, KeyBindingPressedMessage::new,
 				KeyBindingPressedMessage::handler);
 	}
@@ -42,7 +42,7 @@ public class OpenStatusKeyKeyBinding extends MythicalWorldModElements.ModElement
 	@Override
 	@OnlyIn(Dist.CLIENT)
 	public void initElements() {
-		keys = new KeyBinding("key.mythical_world.open_status_key", GLFW.GLFW_KEY_V, "key.categories.mythical_keys");
+		keys = new KeyBinding("key.mythical_world.open_status_gui_key", GLFW.GLFW_KEY_H, "key.categories.mythical_keys");
 		ClientRegistry.registerKeyBinding(keys);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
@@ -97,7 +97,7 @@ public class OpenStatusKeyKeyBinding extends MythicalWorldModElements.ModElement
 			return;
 		if (type == 0) {
 
-			OpenStatusGUIProcedure.executeProcedure(Stream
+			OpenStatusGUIProcedureProcedure.executeProcedure(Stream
 					.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x), new AbstractMap.SimpleEntry<>("y", y),
 							new AbstractMap.SimpleEntry<>("z", z), new AbstractMap.SimpleEntry<>("entity", entity))
 					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));

@@ -5,16 +5,12 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.World;
-import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.client.gui.widget.button.Button;
 import net.minecraft.client.gui.screen.inventory.ContainerScreen;
 import net.minecraft.client.Minecraft;
-
-import net.mcreator.mythical_world.MythicalWorldMod;
 
 import java.util.HashMap;
 
@@ -35,8 +31,8 @@ public class StatusGUIGuiWindow extends ContainerScreen<StatusGUIGui.GuiContaine
 		this.y = container.y;
 		this.z = container.z;
 		this.entity = container.entity;
-		this.xSize = 176;
-		this.ySize = 166;
+		this.xSize = 259;
+		this.ySize = 240;
 	}
 
 	@Override
@@ -52,8 +48,8 @@ public class StatusGUIGuiWindow extends ContainerScreen<StatusGUIGui.GuiContaine
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 
-		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("mythical_world:textures/1.0.png"));
-		this.blit(ms, this.guiLeft + 0, this.guiTop + 0, 0, 0, 176, 166, 176, 166);
+		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("mythical_world:textures/4.0.png"));
+		this.blit(ms, this.guiLeft + 0, this.guiTop + 0, 0, 0, 259, 240, 259, 240);
 
 		RenderSystem.disableBlend();
 	}
@@ -86,83 +82,5 @@ public class StatusGUIGuiWindow extends ContainerScreen<StatusGUIGui.GuiContaine
 	public void init(Minecraft minecraft, int width, int height) {
 		super.init(minecraft, width, height);
 		minecraft.keyboardListener.enableRepeatEvents(true);
-		this.addButton(new Button(this.guiLeft + 55, this.guiTop + 47, 30, 20, new StringTextComponent("+"), e -> {
-			if (true) {
-				MythicalWorldMod.PACKET_HANDLER.sendToServer(new StatusGUIGui.ButtonPressedMessage(0, x, y, z));
-				StatusGUIGui.handleButtonAction(entity, 0, x, y, z);
-			}
-		}));
-		this.addButton(new Button(this.guiLeft + 6, this.guiTop + 47, 30, 20, new StringTextComponent("-"), e -> {
-			if (true) {
-				MythicalWorldMod.PACKET_HANDLER.sendToServer(new StatusGUIGui.ButtonPressedMessage(1, x, y, z));
-				StatusGUIGui.handleButtonAction(entity, 1, x, y, z);
-			}
-		}));
-		this.addButton(new Button(this.guiLeft + 55, this.guiTop + 81, 30, 20, new StringTextComponent("+"), e -> {
-			if (true) {
-				MythicalWorldMod.PACKET_HANDLER.sendToServer(new StatusGUIGui.ButtonPressedMessage(2, x, y, z));
-				StatusGUIGui.handleButtonAction(entity, 2, x, y, z);
-			}
-		}));
-		this.addButton(new Button(this.guiLeft + 6, this.guiTop + 81, 30, 20, new StringTextComponent("-"), e -> {
-			if (true) {
-				MythicalWorldMod.PACKET_HANDLER.sendToServer(new StatusGUIGui.ButtonPressedMessage(3, x, y, z));
-				StatusGUIGui.handleButtonAction(entity, 3, x, y, z);
-			}
-		}));
-		this.addButton(new Button(this.guiLeft + 55, this.guiTop + 115, 30, 20, new StringTextComponent("+"), e -> {
-			if (true) {
-				MythicalWorldMod.PACKET_HANDLER.sendToServer(new StatusGUIGui.ButtonPressedMessage(4, x, y, z));
-				StatusGUIGui.handleButtonAction(entity, 4, x, y, z);
-			}
-		}));
-		this.addButton(new Button(this.guiLeft + 6, this.guiTop + 115, 30, 20, new StringTextComponent("-"), e -> {
-			if (true) {
-				MythicalWorldMod.PACKET_HANDLER.sendToServer(new StatusGUIGui.ButtonPressedMessage(5, x, y, z));
-				StatusGUIGui.handleButtonAction(entity, 5, x, y, z);
-			}
-		}));
-		this.addButton(new Button(this.guiLeft + 138, this.guiTop + 47, 30, 20, new StringTextComponent("+"), e -> {
-			if (true) {
-				MythicalWorldMod.PACKET_HANDLER.sendToServer(new StatusGUIGui.ButtonPressedMessage(6, x, y, z));
-				StatusGUIGui.handleButtonAction(entity, 6, x, y, z);
-			}
-		}));
-		this.addButton(new Button(this.guiLeft + 89, this.guiTop + 47, 30, 20, new StringTextComponent("-"), e -> {
-			if (true) {
-				MythicalWorldMod.PACKET_HANDLER.sendToServer(new StatusGUIGui.ButtonPressedMessage(7, x, y, z));
-				StatusGUIGui.handleButtonAction(entity, 7, x, y, z);
-			}
-		}));
-		this.addButton(new Button(this.guiLeft + 138, this.guiTop + 81, 30, 20, new StringTextComponent("+"), e -> {
-			if (true) {
-				MythicalWorldMod.PACKET_HANDLER.sendToServer(new StatusGUIGui.ButtonPressedMessage(8, x, y, z));
-				StatusGUIGui.handleButtonAction(entity, 8, x, y, z);
-			}
-		}));
-		this.addButton(new Button(this.guiLeft + 89, this.guiTop + 81, 30, 20, new StringTextComponent("-"), e -> {
-			if (true) {
-				MythicalWorldMod.PACKET_HANDLER.sendToServer(new StatusGUIGui.ButtonPressedMessage(9, x, y, z));
-				StatusGUIGui.handleButtonAction(entity, 9, x, y, z);
-			}
-		}));
-		this.addButton(new Button(this.guiLeft + 138, this.guiTop + 115, 30, 20, new StringTextComponent("+"), e -> {
-			if (true) {
-				MythicalWorldMod.PACKET_HANDLER.sendToServer(new StatusGUIGui.ButtonPressedMessage(10, x, y, z));
-				StatusGUIGui.handleButtonAction(entity, 10, x, y, z);
-			}
-		}));
-		this.addButton(new Button(this.guiLeft + 89, this.guiTop + 115, 30, 20, new StringTextComponent("-"), e -> {
-			if (true) {
-				MythicalWorldMod.PACKET_HANDLER.sendToServer(new StatusGUIGui.ButtonPressedMessage(11, x, y, z));
-				StatusGUIGui.handleButtonAction(entity, 11, x, y, z);
-			}
-		}));
-		this.addButton(new Button(this.guiLeft + 64, this.guiTop + 139, 46, 20, new StringTextComponent("Next"), e -> {
-			if (true) {
-				MythicalWorldMod.PACKET_HANDLER.sendToServer(new StatusGUIGui.ButtonPressedMessage(12, x, y, z));
-				StatusGUIGui.handleButtonAction(entity, 12, x, y, z);
-			}
-		}));
 	}
 }

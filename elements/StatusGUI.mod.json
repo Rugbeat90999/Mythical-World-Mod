@@ -3,8 +3,8 @@
   "_type": "gui",
   "definition": {
     "type": 0,
-    "width": 176,
-    "height": 166,
+    "width": 259,
+    "height": 240,
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 0,
     "renderBgLayer": false,
@@ -13,11 +13,11 @@
       {
         "type": "image",
         "data": {
-          "image": "1.0.png",
+          "image": "4.0.png",
           "use1Xscale": false,
-          "name": "1.0.png",
-          "x": 125,
-          "y": 37
+          "name": "4.0.png",
+          "x": 84,
+          "y": 0
         }
       },
       {
@@ -29,8 +29,8 @@
             "falpha": 0.0
           },
           "name": "<VAR:integer:level>",
-          "x": 140,
-          "y": 55
+          "x": 99,
+          "y": 18
         }
       },
       {
@@ -42,32 +42,8 @@
             "falpha": 0.0
           },
           "name": "<VAR:integer:abilityPoints>",
-          "x": 274,
-          "y": 55
-        }
-      },
-      {
-        "type": "button",
-        "data": {
-          "text": "+",
-          "width": 30,
-          "height": 20,
-          "name": "+",
-          "x": 181,
-          "y": 84
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "text": "<VAR:integer:strength>",
-          "color": {
-            "value": -12895429,
-            "falpha": 0.0
-          },
-          "name": "<VAR:integer:strength>",
-          "x": 167,
-          "y": 91
+          "x": 316,
+          "y": 17
         }
       },
       {
@@ -77,8 +53,21 @@
           "width": 30,
           "height": 20,
           "name": "-",
-          "x": 132,
-          "y": 84
+          "x": 92,
+          "y": 38
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:stength>",
+          "color": {
+            "value": -12895429,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:stength>",
+          "x": 126,
+          "y": 45
         }
       },
       {
@@ -88,8 +77,19 @@
           "width": 30,
           "height": 20,
           "name": "+",
-          "x": 181,
-          "y": 118
+          "x": 141,
+          "y": 38
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "-",
+          "width": 30,
+          "height": 20,
+          "name": "-",
+          "x": 92,
+          "y": 73
         }
       },
       {
@@ -101,19 +101,8 @@
             "falpha": 0.0
           },
           "name": "<VAR:integer:dextarity>",
-          "x": 167,
-          "y": 125
-        }
-      },
-      {
-        "type": "button",
-        "data": {
-          "text": "-",
-          "width": 30,
-          "height": 20,
-          "name": "-",
-          "x": 132,
-          "y": 118
+          "x": 126,
+          "y": 80
         }
       },
       {
@@ -123,8 +112,19 @@
           "width": 30,
           "height": 20,
           "name": "+",
-          "x": 181,
-          "y": 152
+          "x": 141,
+          "y": 73
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "-",
+          "width": 30,
+          "height": 20,
+          "name": "-",
+          "x": 92,
+          "y": 108
         }
       },
       {
@@ -136,19 +136,8 @@
             "falpha": 0.0
           },
           "name": "<VAR:integer:constitution>",
-          "x": 167,
-          "y": 159
-        }
-      },
-      {
-        "type": "button",
-        "data": {
-          "text": "-",
-          "width": 30,
-          "height": 20,
-          "name": "-",
-          "x": 132,
-          "y": 152
+          "x": 126,
+          "y": 115
         }
       },
       {
@@ -158,8 +147,19 @@
           "width": 30,
           "height": 20,
           "name": "+",
-          "x": 264,
-          "y": 84
+          "x": 141,
+          "y": 108
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "-",
+          "width": 30,
+          "height": 20,
+          "name": "-",
+          "x": 92,
+          "y": 143
         }
       },
       {
@@ -171,19 +171,8 @@
             "falpha": 0.0
           },
           "name": "<VAR:integer:wisdom>",
-          "x": 250,
-          "y": 91
-        }
-      },
-      {
-        "type": "button",
-        "data": {
-          "text": "-",
-          "width": 30,
-          "height": 20,
-          "name": "-",
-          "x": 215,
-          "y": 84
+          "x": 126,
+          "y": 150
         }
       },
       {
@@ -193,8 +182,19 @@
           "width": 30,
           "height": 20,
           "name": "+",
-          "x": 264,
-          "y": 118
+          "x": 141,
+          "y": 143
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "-",
+          "width": 30,
+          "height": 20,
+          "name": "-",
+          "x": 92,
+          "y": 178
         }
       },
       {
@@ -206,19 +206,8 @@
             "falpha": 0.0
           },
           "name": "<VAR:integer:inteligence>",
-          "x": 250,
-          "y": 125
-        }
-      },
-      {
-        "type": "button",
-        "data": {
-          "text": "-",
-          "width": 30,
-          "height": 20,
-          "name": "-",
-          "x": 215,
-          "y": 118
+          "x": 126,
+          "y": 185
         }
       },
       {
@@ -228,8 +217,19 @@
           "width": 30,
           "height": 20,
           "name": "+",
-          "x": 264,
-          "y": 152
+          "x": 141,
+          "y": 178
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "-",
+          "width": 30,
+          "height": 20,
+          "name": "-",
+          "x": 92,
+          "y": 213
         }
       },
       {
@@ -241,8 +241,19 @@
             "falpha": 0.0
           },
           "name": "<VAR:integer:charisma>",
-          "x": 250,
-          "y": 159
+          "x": 126,
+          "y": 220
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "+",
+          "width": 30,
+          "height": 20,
+          "name": "+",
+          "x": 141,
+          "y": 213
         }
       },
       {
@@ -252,22 +263,417 @@
           "width": 30,
           "height": 20,
           "name": "-",
-          "x": 215,
-          "y": 152
+          "x": 175,
+          "y": 38
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:waterAffinity>",
+          "color": {
+            "value": -12895429,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:waterAffinity>",
+          "x": 209,
+          "y": 45
         }
       },
       {
         "type": "button",
         "data": {
-          "text": "Next",
-          "onClick": {
-            "name": "OpenAffinityGUI1"
-          },
-          "width": 46,
+          "text": "+",
+          "width": 30,
           "height": 20,
-          "name": "Next",
-          "x": 190,
-          "y": 176
+          "name": "+",
+          "x": 224,
+          "y": 38
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "-",
+          "width": 30,
+          "height": 20,
+          "name": "-",
+          "x": 175,
+          "y": 73
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:earthAffinity>",
+          "color": {
+            "value": -12895429,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:earthAffinity>",
+          "x": 209,
+          "y": 80
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "+",
+          "width": 30,
+          "height": 20,
+          "name": "+",
+          "x": 224,
+          "y": 73
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "-",
+          "width": 30,
+          "height": 20,
+          "name": "-",
+          "x": 175,
+          "y": 108
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:fireAffinity>",
+          "color": {
+            "value": -12895429,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:fireAffinity>",
+          "x": 209,
+          "y": 115
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "+",
+          "width": 30,
+          "height": 20,
+          "name": "+",
+          "x": 224,
+          "y": 108
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "-",
+          "width": 30,
+          "height": 20,
+          "name": "-",
+          "x": 175,
+          "y": 143
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:airAffinity>",
+          "color": {
+            "value": -12895429,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:airAffinity>",
+          "x": 209,
+          "y": 150
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "+",
+          "width": 30,
+          "height": 20,
+          "name": "+",
+          "x": 224,
+          "y": 143
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "-",
+          "width": 30,
+          "height": 20,
+          "name": "-",
+          "x": 175,
+          "y": 178
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:lightAffinity>",
+          "color": {
+            "value": -12895429,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:lightAffinity>",
+          "x": 209,
+          "y": 185
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "+",
+          "width": 30,
+          "height": 20,
+          "name": "+",
+          "x": 224,
+          "y": 178
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "-",
+          "width": 30,
+          "height": 20,
+          "name": "-",
+          "x": 175,
+          "y": 213
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:darkAffinity>",
+          "color": {
+            "value": -12895429,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:darkAffinity>",
+          "x": 209,
+          "y": 220
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "+",
+          "width": 30,
+          "height": 20,
+          "name": "+",
+          "x": 224,
+          "y": 213
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "-",
+          "width": 30,
+          "height": 20,
+          "name": "-",
+          "x": 258,
+          "y": 38
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:lightWeaponAffinity>",
+          "color": {
+            "value": -12895429,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:lightWeaponAffinity>",
+          "x": 292,
+          "y": 45
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "+",
+          "width": 30,
+          "height": 20,
+          "name": "+",
+          "x": 307,
+          "y": 38
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "-",
+          "width": 30,
+          "height": 20,
+          "name": "-",
+          "x": 258,
+          "y": 73
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:mediumWeaponAffinity>",
+          "color": {
+            "value": -12895429,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:mediumWeaponAffinity>",
+          "x": 292,
+          "y": 80
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "+",
+          "width": 30,
+          "height": 20,
+          "name": "+",
+          "x": 307,
+          "y": 73
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "-",
+          "width": 30,
+          "height": 20,
+          "name": "-",
+          "x": 258,
+          "y": 108
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:heavyWeaponAffinity>",
+          "color": {
+            "value": -12895429,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:heavyWeaponAffinity>",
+          "x": 292,
+          "y": 115
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "+",
+          "width": 30,
+          "height": 20,
+          "name": "+",
+          "x": 307,
+          "y": 108
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "-",
+          "width": 30,
+          "height": 20,
+          "name": "-",
+          "x": 258,
+          "y": 143
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:rangedWeaponAffinity>",
+          "color": {
+            "value": -12895429,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:rangedWeaponAffinity>",
+          "x": 292,
+          "y": 150
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "+",
+          "width": 30,
+          "height": 20,
+          "name": "+",
+          "x": 307,
+          "y": 143
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "-",
+          "width": 30,
+          "height": 20,
+          "name": "-",
+          "x": 258,
+          "y": 178
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:shieldAffinity>",
+          "color": {
+            "value": -12895429,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:shieldAffinity>",
+          "x": 292,
+          "y": 185
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "+",
+          "width": 30,
+          "height": 20,
+          "name": "+",
+          "x": 307,
+          "y": 178
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "-",
+          "width": 30,
+          "height": 20,
+          "name": "-",
+          "x": 258,
+          "y": 213
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:magicAffinity>",
+          "color": {
+            "value": -12895429,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:magicAffinity>",
+          "x": 292,
+          "y": 220
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "+",
+          "width": 30,
+          "height": 20,
+          "name": "+",
+          "x": 307,
+          "y": 213
         }
       }
     ],

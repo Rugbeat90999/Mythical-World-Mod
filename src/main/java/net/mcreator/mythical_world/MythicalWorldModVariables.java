@@ -94,7 +94,6 @@ public class MythicalWorldModVariables {
 			nbt.putDouble("shieldAffinity", instance.shieldAffinity);
 			nbt.putDouble("lightAffinity", instance.lightAffinity);
 			nbt.putDouble("darkAffinity", instance.darkAffinity);
-			nbt.putDouble("status_open", instance.status_open);
 			nbt.putDouble("abilityPoints", instance.abilityPoints);
 			nbt.putDouble("rangedWeaponAffinity", instance.rangedWeaponAffinity);
 			return nbt;
@@ -126,7 +125,6 @@ public class MythicalWorldModVariables {
 			instance.shieldAffinity = nbt.getDouble("shieldAffinity");
 			instance.lightAffinity = nbt.getDouble("lightAffinity");
 			instance.darkAffinity = nbt.getDouble("darkAffinity");
-			instance.status_open = nbt.getDouble("status_open");
 			instance.abilityPoints = nbt.getDouble("abilityPoints");
 			instance.rangedWeaponAffinity = nbt.getDouble("rangedWeaponAffinity");
 		}
@@ -156,7 +154,6 @@ public class MythicalWorldModVariables {
 		public double shieldAffinity = 1.0;
 		public double lightAffinity = 1.0;
 		public double darkAffinity = 1.0;
-		public double status_open = 0;
 		public double abilityPoints = 0;
 		public double rangedWeaponAffinity = 0;
 
@@ -219,7 +216,6 @@ public class MythicalWorldModVariables {
 		clone.rangedWeaponAffinity = original.rangedWeaponAffinity;
 		if (!event.isWasDeath()) {
 			clone.mana = original.mana;
-			clone.status_open = original.status_open;
 		}
 	}
 
@@ -268,7 +264,6 @@ public class MythicalWorldModVariables {
 					variables.shieldAffinity = message.data.shieldAffinity;
 					variables.lightAffinity = message.data.lightAffinity;
 					variables.darkAffinity = message.data.darkAffinity;
-					variables.status_open = message.data.status_open;
 					variables.abilityPoints = message.data.abilityPoints;
 					variables.rangedWeaponAffinity = message.data.rangedWeaponAffinity;
 				}
