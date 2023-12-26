@@ -17,7 +17,44 @@
           "use1Xscale": false,
           "name": "1.0.png",
           "x": 125,
-          "y": 38
+          "y": 37
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:level>",
+          "color": {
+            "value": -12895429,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:level>",
+          "x": 140,
+          "y": 55
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:abilityPoints>",
+          "color": {
+            "value": -12895429,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:abilityPoints>",
+          "x": 274,
+          "y": 55
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "+",
+          "width": 30,
+          "height": 20,
+          "name": "+",
+          "x": 181,
+          "y": 84
         }
       },
       {
@@ -30,7 +67,29 @@
           },
           "name": "<VAR:integer:strength>",
           "x": 167,
-          "y": 77
+          "y": 91
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "-",
+          "width": 30,
+          "height": 20,
+          "name": "-",
+          "x": 132,
+          "y": 84
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "+",
+          "width": 30,
+          "height": 20,
+          "name": "+",
+          "x": 181,
+          "y": 118
         }
       },
       {
@@ -43,20 +102,64 @@
           },
           "name": "<VAR:integer:dextarity>",
           "x": 167,
-          "y": 111
+          "y": 125
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "-",
+          "width": 30,
+          "height": 20,
+          "name": "-",
+          "x": 132,
+          "y": 118
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "+",
+          "width": 30,
+          "height": 20,
+          "name": "+",
+          "x": 181,
+          "y": 152
         }
       },
       {
         "type": "label",
         "data": {
-          "text": "<VAR:integer:edurance>",
+          "text": "<VAR:integer:constitution>",
           "color": {
             "value": -12895429,
             "falpha": 0.0
           },
-          "name": "<VAR:integer:edurance>",
+          "name": "<VAR:integer:constitution>",
           "x": 167,
-          "y": 146
+          "y": 159
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "-",
+          "width": 30,
+          "height": 20,
+          "name": "-",
+          "x": 132,
+          "y": 152
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "+",
+          "width": 30,
+          "height": 20,
+          "name": "+",
+          "x": 264,
+          "y": 84
         }
       },
       {
@@ -69,7 +172,29 @@
           },
           "name": "<VAR:integer:wisdom>",
           "x": 250,
-          "y": 77
+          "y": 91
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "-",
+          "width": 30,
+          "height": 20,
+          "name": "-",
+          "x": 215,
+          "y": 84
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "+",
+          "width": 30,
+          "height": 20,
+          "name": "+",
+          "x": 264,
+          "y": 118
         }
       },
       {
@@ -82,7 +207,29 @@
           },
           "name": "<VAR:integer:inteligence>",
           "x": 250,
-          "y": 111
+          "y": 125
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "-",
+          "width": 30,
+          "height": 20,
+          "name": "-",
+          "x": 215,
+          "y": 118
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "+",
+          "width": 30,
+          "height": 20,
+          "name": "+",
+          "x": 264,
+          "y": 152
         }
       },
       {
@@ -95,117 +242,7 @@
           },
           "name": "<VAR:integer:charisma>",
           "x": 250,
-          "y": 146
-        }
-      },
-      {
-        "type": "button",
-        "data": {
-          "text": "+",
-          "width": 30,
-          "height": 20,
-          "name": "+",
-          "x": 181,
-          "y": 70
-        }
-      },
-      {
-        "type": "button",
-        "data": {
-          "text": "+",
-          "width": 30,
-          "height": 20,
-          "name": "+",
-          "x": 181,
-          "y": 104
-        }
-      },
-      {
-        "type": "button",
-        "data": {
-          "text": "+",
-          "width": 30,
-          "height": 20,
-          "name": "+",
-          "x": 181,
-          "y": 139
-        }
-      },
-      {
-        "type": "button",
-        "data": {
-          "text": "+",
-          "width": 30,
-          "height": 20,
-          "name": "+",
-          "x": 181,
-          "y": 138
-        }
-      },
-      {
-        "type": "button",
-        "data": {
-          "text": "+",
-          "width": 30,
-          "height": 20,
-          "name": "+",
-          "x": 264,
-          "y": 70
-        }
-      },
-      {
-        "type": "button",
-        "data": {
-          "text": "+",
-          "width": 30,
-          "height": 20,
-          "name": "+",
-          "x": 264,
-          "y": 104
-        }
-      },
-      {
-        "type": "button",
-        "data": {
-          "text": "+",
-          "width": 30,
-          "height": 20,
-          "name": "+",
-          "x": 264,
-          "y": 139
-        }
-      },
-      {
-        "type": "button",
-        "data": {
-          "text": "-",
-          "width": 30,
-          "height": 20,
-          "name": "-",
-          "x": 132,
-          "y": 70
-        }
-      },
-      {
-        "type": "button",
-        "data": {
-          "text": "-",
-          "width": 30,
-          "height": 20,
-          "name": "-",
-          "x": 132,
-          "y": 104
-        }
-      },
-      {
-        "type": "button",
-        "data": {
-          "text": "-",
-          "width": 30,
-          "height": 20,
-          "name": "-",
-          "x": 132,
-          "y": 139
+          "y": 159
         }
       },
       {
@@ -216,29 +253,7 @@
           "height": 20,
           "name": "-",
           "x": 215,
-          "y": 70
-        }
-      },
-      {
-        "type": "button",
-        "data": {
-          "text": "-",
-          "width": 30,
-          "height": 20,
-          "name": "-",
-          "x": 215,
-          "y": 104
-        }
-      },
-      {
-        "type": "button",
-        "data": {
-          "text": "-",
-          "width": 30,
-          "height": 20,
-          "name": "-",
-          "x": 215,
-          "y": 139
+          "y": 152
         }
       },
       {
@@ -252,7 +267,7 @@
           "height": 20,
           "name": "Next",
           "x": 190,
-          "y": 177
+          "y": 176
         }
       }
     ],

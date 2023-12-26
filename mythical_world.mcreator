@@ -602,21 +602,30 @@
       "path": "~/StatusGUI"
     },
     {
-      "name": "OpenStatusScreenKey",
-      "type": "keybind",
+      "name": "AffinityGUI1",
+      "type": "gui",
       "sortid": 36,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "open_status_screen_key",
+      "registry_name": "affinity_gui_1",
       "path": "~/StatusGUI"
     },
     {
-      "name": "OpenStatusScreenProcedure",
-      "type": "procedure",
-      "sortid": 36,
+      "name": "AffinityGUI2",
+      "type": "gui",
+      "sortid": 37,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "open_status_screen_procedure",
+      "registry_name": "affinity_gui_2",
+      "path": "~/StatusGUI"
+    },
+    {
+      "name": "OpenStatusGUI",
+      "type": "procedure",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_status_gui",
       "metadata": {
         "dependencies": [
           {
@@ -644,44 +653,9 @@
       "path": "~/StatusGUI"
     },
     {
-      "name": "AffinityGUI1",
-      "type": "gui",
-      "sortid": 37,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "affinity_gui_1",
-      "path": "~/StatusGUI"
-    },
-    {
-      "name": "AffinityGUI2",
-      "type": "gui",
-      "sortid": 38,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "affinity_gui_2",
-      "path": "~/StatusGUI"
-    },
-    {
-      "name": "CloseStatusGUI",
-      "type": "procedure",
-      "sortid": 39,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "close_status_gui",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/StatusGUI"
-    },
-    {
       "name": "OpenAffinityGUI1",
       "type": "procedure",
-      "sortid": 40,
+      "sortid": 39,
       "compiles": true,
       "locked_code": false,
       "registry_name": "open_affinity_gui_1",
@@ -714,7 +688,7 @@
     {
       "name": "OpenAffinityGUI2",
       "type": "procedure",
-      "sortid": 41,
+      "sortid": 40,
       "compiles": true,
       "locked_code": false,
       "registry_name": "open_affinity_gui_2",
@@ -889,13 +863,23 @@
       "type": "number",
       "scope": "player_lifetime",
       "value": "0"
+    },
+    {
+      "name": "abilityPoints",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "rangedWeaponAffinity",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
     }
   ],
   "sound_elements": [],
   "language_map": {
-    "en_us": {
-      "key.mythical_world.open_status_screen_key": "Open Status Screen"
-    }
+    "en_us": {}
   },
   "foldersRoot": {
     "name": "~",

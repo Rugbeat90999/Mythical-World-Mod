@@ -5,14 +5,17 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.World;
+import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.client.gui.widget.button.Button;
 import net.minecraft.client.gui.screen.inventory.ContainerScreen;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.mythical_world.MythicalWorldModVariables;
+import net.mcreator.mythical_world.MythicalWorldMod;
 
 import java.util.HashMap;
 
@@ -51,7 +54,7 @@ public class AffinityGUI2GuiWindow extends ContainerScreen<AffinityGUI2Gui.GuiCo
 		RenderSystem.defaultBlendFunc();
 
 		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("mythical_world:textures/2.0.png"));
-		this.blit(ms, this.guiLeft + 0, this.guiTop + 1, 0, 0, 176, 166, 176, 166);
+		this.blit(ms, this.guiLeft + 0, this.guiTop + 0, 0, 0, 176, 166, 176, 166);
 
 		RenderSystem.disableBlend();
 	}
@@ -73,17 +76,21 @@ public class AffinityGUI2GuiWindow extends ContainerScreen<AffinityGUI2Gui.GuiCo
 	@Override
 	protected void drawGuiContainerForegroundLayer(MatrixStack ms, int mouseX, int mouseY) {
 		this.font.drawString(ms, "" + (int) ((entity.getCapability(MythicalWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new MythicalWorldModVariables.PlayerVariables())).waterAffinity) + "", 41, 40, -12895429);
+				.orElse(new MythicalWorldModVariables.PlayerVariables())).level) + "", 14, 18, -12895429);
 		this.font.drawString(ms, "" + (int) ((entity.getCapability(MythicalWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new MythicalWorldModVariables.PlayerVariables())).earthAffinity) + "", 41, 74, -12895429);
+				.orElse(new MythicalWorldModVariables.PlayerVariables())).abilityPoints) + "", 148, 18, -12895429);
 		this.font.drawString(ms, "" + (int) ((entity.getCapability(MythicalWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new MythicalWorldModVariables.PlayerVariables())).fireAffinity) + "", 41, 109, -12895429);
+				.orElse(new MythicalWorldModVariables.PlayerVariables())).waterAffinity) + "", 41, 54, -12895429);
 		this.font.drawString(ms, "" + (int) ((entity.getCapability(MythicalWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new MythicalWorldModVariables.PlayerVariables())).airAffinity) + "", 124, 40, -12895429);
+				.orElse(new MythicalWorldModVariables.PlayerVariables())).earthAffinity) + "", 41, 88, -12895429);
 		this.font.drawString(ms, "" + (int) ((entity.getCapability(MythicalWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new MythicalWorldModVariables.PlayerVariables())).lightAffinity) + "", 124, 74, -12895429);
+				.orElse(new MythicalWorldModVariables.PlayerVariables())).fireAffinity) + "", 41, 122, -12895429);
 		this.font.drawString(ms, "" + (int) ((entity.getCapability(MythicalWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new MythicalWorldModVariables.PlayerVariables())).darkAffinity) + "", 124, 109, -12895429);
+				.orElse(new MythicalWorldModVariables.PlayerVariables())).airAffinity) + "", 124, 54, -12895429);
+		this.font.drawString(ms, "" + (int) ((entity.getCapability(MythicalWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				.orElse(new MythicalWorldModVariables.PlayerVariables())).lightAffinity) + "", 124, 88, -12895429);
+		this.font.drawString(ms, "" + (int) ((entity.getCapability(MythicalWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				.orElse(new MythicalWorldModVariables.PlayerVariables())).darkAffinity) + "", 124, 122, -12895429);
 	}
 
 	@Override
@@ -96,5 +103,83 @@ public class AffinityGUI2GuiWindow extends ContainerScreen<AffinityGUI2Gui.GuiCo
 	public void init(Minecraft minecraft, int width, int height) {
 		super.init(minecraft, width, height);
 		minecraft.keyboardListener.enableRepeatEvents(true);
+		this.addButton(new Button(this.guiLeft + 55, this.guiTop + 47, 30, 20, new StringTextComponent("+"), e -> {
+			if (true) {
+				MythicalWorldMod.PACKET_HANDLER.sendToServer(new AffinityGUI2Gui.ButtonPressedMessage(0, x, y, z));
+				AffinityGUI2Gui.handleButtonAction(entity, 0, x, y, z);
+			}
+		}));
+		this.addButton(new Button(this.guiLeft + 6, this.guiTop + 47, 30, 20, new StringTextComponent("-"), e -> {
+			if (true) {
+				MythicalWorldMod.PACKET_HANDLER.sendToServer(new AffinityGUI2Gui.ButtonPressedMessage(1, x, y, z));
+				AffinityGUI2Gui.handleButtonAction(entity, 1, x, y, z);
+			}
+		}));
+		this.addButton(new Button(this.guiLeft + 55, this.guiTop + 81, 30, 20, new StringTextComponent("+"), e -> {
+			if (true) {
+				MythicalWorldMod.PACKET_HANDLER.sendToServer(new AffinityGUI2Gui.ButtonPressedMessage(2, x, y, z));
+				AffinityGUI2Gui.handleButtonAction(entity, 2, x, y, z);
+			}
+		}));
+		this.addButton(new Button(this.guiLeft + 6, this.guiTop + 81, 30, 20, new StringTextComponent("-"), e -> {
+			if (true) {
+				MythicalWorldMod.PACKET_HANDLER.sendToServer(new AffinityGUI2Gui.ButtonPressedMessage(3, x, y, z));
+				AffinityGUI2Gui.handleButtonAction(entity, 3, x, y, z);
+			}
+		}));
+		this.addButton(new Button(this.guiLeft + 55, this.guiTop + 115, 30, 20, new StringTextComponent("+"), e -> {
+			if (true) {
+				MythicalWorldMod.PACKET_HANDLER.sendToServer(new AffinityGUI2Gui.ButtonPressedMessage(4, x, y, z));
+				AffinityGUI2Gui.handleButtonAction(entity, 4, x, y, z);
+			}
+		}));
+		this.addButton(new Button(this.guiLeft + 6, this.guiTop + 115, 30, 20, new StringTextComponent("-"), e -> {
+			if (true) {
+				MythicalWorldMod.PACKET_HANDLER.sendToServer(new AffinityGUI2Gui.ButtonPressedMessage(5, x, y, z));
+				AffinityGUI2Gui.handleButtonAction(entity, 5, x, y, z);
+			}
+		}));
+		this.addButton(new Button(this.guiLeft + 138, this.guiTop + 47, 30, 20, new StringTextComponent("+"), e -> {
+			if (true) {
+				MythicalWorldMod.PACKET_HANDLER.sendToServer(new AffinityGUI2Gui.ButtonPressedMessage(6, x, y, z));
+				AffinityGUI2Gui.handleButtonAction(entity, 6, x, y, z);
+			}
+		}));
+		this.addButton(new Button(this.guiLeft + 89, this.guiTop + 47, 30, 20, new StringTextComponent("-"), e -> {
+			if (true) {
+				MythicalWorldMod.PACKET_HANDLER.sendToServer(new AffinityGUI2Gui.ButtonPressedMessage(7, x, y, z));
+				AffinityGUI2Gui.handleButtonAction(entity, 7, x, y, z);
+			}
+		}));
+		this.addButton(new Button(this.guiLeft + 138, this.guiTop + 81, 30, 20, new StringTextComponent("+"), e -> {
+			if (true) {
+				MythicalWorldMod.PACKET_HANDLER.sendToServer(new AffinityGUI2Gui.ButtonPressedMessage(8, x, y, z));
+				AffinityGUI2Gui.handleButtonAction(entity, 8, x, y, z);
+			}
+		}));
+		this.addButton(new Button(this.guiLeft + 89, this.guiTop + 81, 30, 20, new StringTextComponent("-"), e -> {
+			if (true) {
+				MythicalWorldMod.PACKET_HANDLER.sendToServer(new AffinityGUI2Gui.ButtonPressedMessage(9, x, y, z));
+				AffinityGUI2Gui.handleButtonAction(entity, 9, x, y, z);
+			}
+		}));
+		this.addButton(new Button(this.guiLeft + 138, this.guiTop + 115, 30, 20, new StringTextComponent("+"), e -> {
+			if (true) {
+				MythicalWorldMod.PACKET_HANDLER.sendToServer(new AffinityGUI2Gui.ButtonPressedMessage(10, x, y, z));
+				AffinityGUI2Gui.handleButtonAction(entity, 10, x, y, z);
+			}
+		}));
+		this.addButton(new Button(this.guiLeft + 89, this.guiTop + 115, 30, 20, new StringTextComponent("-"), e -> {
+			if (true) {
+				MythicalWorldMod.PACKET_HANDLER.sendToServer(new AffinityGUI2Gui.ButtonPressedMessage(11, x, y, z));
+				AffinityGUI2Gui.handleButtonAction(entity, 11, x, y, z);
+			}
+		}));
+		this.addButton(new Button(this.guiLeft + 64, this.guiTop + 139, 46, 20, new StringTextComponent("Next"), e -> {
+			if (true) {
+				MythicalWorldMod.PACKET_HANDLER.sendToServer(new AffinityGUI2Gui.ButtonPressedMessage(12, x, y, z));
+				AffinityGUI2Gui.handleButtonAction(entity, 12, x, y, z);
+			}
+		}));
 	}
 }

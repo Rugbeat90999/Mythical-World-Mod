@@ -21,32 +21,32 @@ import java.util.Map;
 
 import io.netty.buffer.Unpooled;
 
-public class OpenStatusScreenProcedureProcedure {
+public class OpenStatusGUIProcedure {
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				MythicalWorldMod.LOGGER.warn("Failed to load dependency world for procedure OpenStatusScreenProcedure!");
+				MythicalWorldMod.LOGGER.warn("Failed to load dependency world for procedure OpenStatusGUI!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
-				MythicalWorldMod.LOGGER.warn("Failed to load dependency x for procedure OpenStatusScreenProcedure!");
+				MythicalWorldMod.LOGGER.warn("Failed to load dependency x for procedure OpenStatusGUI!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
 			if (!dependencies.containsKey("y"))
-				MythicalWorldMod.LOGGER.warn("Failed to load dependency y for procedure OpenStatusScreenProcedure!");
+				MythicalWorldMod.LOGGER.warn("Failed to load dependency y for procedure OpenStatusGUI!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
 			if (!dependencies.containsKey("z"))
-				MythicalWorldMod.LOGGER.warn("Failed to load dependency z for procedure OpenStatusScreenProcedure!");
+				MythicalWorldMod.LOGGER.warn("Failed to load dependency z for procedure OpenStatusGUI!");
 			return;
 		}
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				MythicalWorldMod.LOGGER.warn("Failed to load dependency entity for procedure OpenStatusScreenProcedure!");
+				MythicalWorldMod.LOGGER.warn("Failed to load dependency entity for procedure OpenStatusGUI!");
 			return;
 		}
 		IWorld world = (IWorld) dependencies.get("world");

@@ -34,7 +34,7 @@ public class AffinityGUI2Gui extends MythicalWorldModElements.ModElement {
 	private static ContainerType<GuiContainerMod> containerType = null;
 
 	public AffinityGUI2Gui(MythicalWorldModElements instance) {
-		super(instance, 38);
+		super(instance, 37);
 		elements.addNetworkMessage(ButtonPressedMessage.class, ButtonPressedMessage::buffer, ButtonPressedMessage::new,
 				ButtonPressedMessage::handler);
 		elements.addNetworkMessage(GUISlotChangedMessage.class, GUISlotChangedMessage::buffer, GUISlotChangedMessage::new,
